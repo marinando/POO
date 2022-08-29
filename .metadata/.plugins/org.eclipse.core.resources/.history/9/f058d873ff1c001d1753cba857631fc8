@@ -1,0 +1,23 @@
+package ifsc;
+
+public class testeJava {
+
+	public static void main(String[] args) {
+
+		// tipos primitivos
+		int a;
+		double b;
+		float d;
+		char q;
+
+		Double db = 32424234d;
+		Long it = 2354567l;
+
+		int[] eqq = { 4, 5, 6, 7 };
+		for (int i = 0; i < eqq.length; i++) {
+			System.out.println(eqq[i]);
+		}
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package ex1;
+
+public class ex1 {
+//	##Crie uma variável do tipo String de nome qualquer. Tente atribuir a ela um valor alfanumérico (String) e um valor numérico de tipo primitivo (int, double, float…).  O que acontece e por quê?
+	
+
+	public static void main(String[] args) {
+		
+		String nome = "banana" + 324;
+		System.out.println(nome);
+		
+		int numero = 3;
+		numero = "letras";
+		
+	}
+}
