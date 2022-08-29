@@ -10,19 +10,29 @@ import java.util.Scanner;
 public class Ex3 {
 
 	public static void main(String[] args) {
-
+		
+		Double precoLitro = 0.0, quantidadeLitro = 0.0;
+		
 		System.out.println("\nCalculadora de abastecimento\n\nInsira o valor do preço por litro do combustível:");
 		Scanner scanner = new Scanner(System.in);
-		Double quantidadeLitro = 0.0;
+		String teste = scanner.nextLine();
 		
-		Double precoLitro = Double.valueOf(scanner.nextLine());
-
-		System.out.println("Qual a quantidade de litros?\n");
-
-		quantidadeLitro = Double.valueOf(scanner.nextLine());
-		System.out.println("\nValor a pagar: " + calculaPreco(quantidadeLitro, precoLitro));
-		
+		if (teste != null) {
+			
+			precoLitro = Double.valueOf(teste);
+			System.out.println("Qual a quantidade de litros?\n");
+			String teste2 = scanner.nextLine();
+			
+			if (teste2 != null) {
+				quantidadeLitro = Double.valueOf(teste2);				
+			}
+		}
+		else {
+			System.out.println("Erro, valor nulo inserido.");
+		}
 		scanner.close();
+		
+		System.out.println("\nValor a pagar: " + calculaPreco(quantidadeLitro, precoLitro));
 
 	}
 
