@@ -13,13 +13,16 @@ public class Ex3 {
 
 		System.out.println("\nCalculadora de abastecimento\n\nInsira o valor do preço por litro do combustível:");
 		Scanner scanner = new Scanner(System.in);
-
+		Double quantidadeLitro = 0.0;
+		
 		Double precoLitro = Double.valueOf(scanner.nextLine());
 
 		System.out.println("Qual a quantidade de litros?\n");
 
-		Double quantidadeLitro = Double.valueOf(scanner.nextLine());
+		quantidadeLitro = Double.valueOf(scanner.nextLine());
 		System.out.println("\nValor a pagar: " + calculaPreco(quantidadeLitro, precoLitro));
+		
+		scanner.close();
 
 	}
 
