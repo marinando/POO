@@ -16,19 +16,19 @@ public class Ex6 {
 		ArrayList<Double> salarios = new ArrayList<>();
 		Scanner salariosScan = new Scanner(System.in);
 
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < 10; i++) {
 			System.out.printf("Insira o salário [%d]:", i);
 			salarios.add(salariosScan.nextDouble());
 		}
 
 		salariosScan.close();
 
-		salarios.sort(null);
+		salarios.sort(null); // com o parâmetro null, ele ordena a lista por padrão por ordem crescente 
 		System.out.println("\nOrdem crescente:");
-		System.out.println(salarios.toString());
+		System.out.println(salarios.toString()); //retorna uma string representando o objeto.
 
 		System.out.println("\nOrdem decrescente:");
-		salarios.sort(Comparator.reverseOrder());
+		salarios.sort(Comparator.reverseOrder()); // retorna a lista em ordem decrescente 
 		System.out.println(salarios.toString());
 	}
 }
