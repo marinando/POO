@@ -1,6 +1,5 @@
 package ex8;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /*8. Crie um vetor de String com tamanho definido e limitado. Preencha este vetor utilizando algum laço de
@@ -31,7 +30,6 @@ public class Ex8 {
 			}
 		}
 		System.out.print("]");
-		
 		System.out.printf("\n\nTamanho do vetor: %d", caracteres.length);
 		if (caracteres.length == 0) {
 			System.out.println("Vetor vazio");
