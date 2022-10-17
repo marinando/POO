@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="revisaoJava/src/|Cliente/src/|Lista02/src/|pratica-anp/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="Cliente/src"/>
+	<classpathentry kind="src" path="Lista02/src"/>
+	<classpathentry kind="src" path="pratica-anp/src"/>
+	<classpathentry kind="src" path="revisaoJava/src"/>
+	<classpathentry kind="output" path="pratica-anp/bin"/>
+</classpath>
